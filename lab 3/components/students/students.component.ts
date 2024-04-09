@@ -5,8 +5,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './students.component.html',
-  styleUrl: './students.component.css'
+  styleUrl: './students.component.css',
 })
 export class StudentsComponent {
-@Input() registeredStudents:{name: string , age:string }[] = [];
+  @Input() students: { name: string; age: number }[] = [];
 }
